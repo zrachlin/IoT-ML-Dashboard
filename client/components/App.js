@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Galery title="Lakes" description="Check out this awesome lake pics">
+        <Galery title="Lakes">
           <img src="/images/canoeing.jpg" alt="Canoeing lake" />
           <img src="/images/montains.jpg" alt="Between Montains" />
           <img src="/images/frozen.jpg" alt="Frozen lake" />
