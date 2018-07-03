@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 
-class Galery extends Component {
+class Gallery extends Component {
   render() {
     const { children } = this.props;
     return (
-      <div className="galery">
+      <div className="gallery">
         <div className="content">{children}</div>
       </div>
     );
   }
 }
 
-export default Galery;
+export default Gallery;
