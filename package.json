@@ -1,23 +1,27 @@
 {
-  "name": "lab-props",
+  "name": "iot-ml-dashboard",
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "nodemon server/index.js & webpack -w"
+    "start": "npm run start-server & npm run build-watch",
+    "start-server": "nodemon server/index.js --ignore public",
+    "build-watch": "webpack -w"
   },
   "dependencies": {
+    "@material-ui/core": "^3.8.1",
+    "@material-ui/icons": "^3.0.1",
     "express": "^4.16.3",
-    "morgan": "^1.9.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "morgan": "^1.9.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "nodemon": "^1.17.5",
-    "webpack": "^4.1.1",
+    "webpack": "^4.28.3",
     "webpack-cli": "^2.0.12"
   },
   "keywords": [],
