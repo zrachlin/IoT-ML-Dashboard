@@ -2,6 +2,8 @@ import React from 'react';
 
 import { withStyles, Typography } from '@material-ui/core';
 
+import mqttClient from './mqtt';
+
 const styles = theme => ({});
 
 const App = props => {
